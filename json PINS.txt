@@ -1,0 +1,448 @@
+{
+  "nome": "Shopping Vitória",
+  "descricao": "SEG - SAB 10:00 - 22:00, DOM 10:00-21:00",
+  "cidade": "Vitória",
+  "latitude": -20.312249,
+  "longitude": -40.288291,
+  "tags": ["plástico", "Pilhas e Baterias", "remédios", "orgânicos", "óleos"]
+},
+{
+  "nome": "PEV para pilhas e baterias Coqueiral",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.359728,
+  "longitude": -40.298974,
+  "tags": ["pilhas e baterias"]
+},
+{
+  "nome": "PEV para pilhas e baterias Centro",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.335509, 
+  "longitude": -40.291782,
+  "tags": ["pilhas e baterias"]
+},
+{
+  "nome": "Ecoponto Hospital Vila Velha",
+  "descricao": "Seg - Sex: 08h - 16:40h, Sáb: 7h - 13h",
+  "cidade": "Vila Velha",
+  "latitude": -20.342072, 
+  "longitude": -40.296212,
+  "tags": ["Entulhos até 2m³,"Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
+},
+{
+  "nome": "Ecoponto Araçás",
+  "descricao": "Seg - Sex: 08h - 16:40h, Sáb: 7h - 13h",
+  "cidade": "Vila Velha",
+  "latitude": -20.381226, 
+  "longitude": -40.326798,
+ "tags": ["Entulhos até 2m³,"Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
+},
+{
+  "nome": "Ecoponto Hospital cocal",
+  "descricao": "Seg - Sex: 08h - 16:40h, Sáb: 7h - 13h",
+  "cidade": "Vila Velha",
+  "latitude":-20.359737, 
+  "longitude": -40.304681 ,
+  "tags": ["Entulhos até 2m³,"Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
+},
+{
+  "nome": "PEV SELETIVA Praia da costa",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude":-20.335966, 
+  "longitude": -40.282809,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Praça De Itapoã",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.353503, 
+  "longitude": -40.288496 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Santa Paula 2 (Barra)",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.414430,  
+  "longitude": -40.337725 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Santa Paula (Barra)",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.416632 ,  
+  "longitude": -40.331567 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Praça Sandra Helena(Ponta Da Fruta)",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.484718, 
+  "longitude": -40.349987,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA IBES",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.351239, 
+  "longitude": -40.315565 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Morro da lagoa (Ponta da Fruta)",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.497679, 
+  "longitude": -40.365134 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Nova América",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.346167, 
+  "longitude": -40.356454 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA São Torquato",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.335971, 
+  "longitude": -40.351055,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Praia Do Coral (Barra)",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.448488, 
+  "longitude": -40.332256 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Vila Nova",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.364872,  
+  "longitude": -40.313619,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Joffre Fraga Vale Encantado",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.371703,  
+  "longitude": -40.354043 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Ataíde",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.339943,   
+  "longitude": -40.326313,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Vale Encantado",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.373257,   
+  "longitude": -40.344070 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA Praça Coqueiral Itaparica ",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.364977,   
+  "longitude": -40.304032 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV SELETIVA AV Central (Ponta da Fruta) ",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.473615,    
+  "longitude": -40.347280 ,
+  "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+  "nome": "PEV VIDRO GLÓRIA",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.334064,    
+  "longitude": -40.310223 ,
+  "tags": ["Vidro"]
+},
+{
+  "nome": "PEV VIDRO Praia da Costa",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.336040,     
+  "longitude": -40.282766,
+  "tags": ["Vidro"]
+},
+{
+  "nome": "PEV VIDRO Ponta Da Fruta",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.481128,      
+  "longitude": -40.353364,
+  "tags": ["Vidro"]
+},
+{
+  "nome": "PEV VIDRO Morro da Lagoa Ponta Da Fruta",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.496995,    
+  "longitude": -40.365764,
+  "tags": ["Vidro"]
+},
+{
+  "nome": "PEV ELETRÔNICOS Coqueiral",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.360057,     
+  "longitude": -40.299031,
+  "tags": ["Resíduos Eletrônicos","Pilhas","Baterias","Placas"]
+},
+{
+  "nome": "PEV ELETRÔNICOS Lindenberg",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.354892,      
+  "longitude": -40.340533,
+  "tags": ["Resíduos Eletrônicos","Pilhas","Baterias","Placas"]
+},
+{
+  "nome": "PEV Lâmpadas Prefeitura de Vila Velha",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.359894,       
+  "longitude": -40.298871,
+  "tags": ["Resíduos Eletrônicos","Pilhas","Baterias","Placas"]
+},
+{
+  "nome": "PEV Pneus Lindenberg",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.354729,        
+  "longitude": -40.340827,
+  "tags": ["Pneus"]
+},
+{
+  "nome": "Peixe Lixeira Prainha",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.329868,         
+  "longitude": -40.291957,
+  "tags": ["Garrafas Pet","Latinhas","Embalagens Longa Vida"]
+},
+{
+  "nome": "Peixe Lixeira Praça Dos Ciclistas",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.375028,          
+  "longitude": -40.304776,
+  "tags": ["Garrafas Pet","Latinhas","Embalagens Longa Vida"]
+},
+{
+  "nome": "PEV PARA TONER E CARTUCHO Lindemberg",
+  "descricao": "Permanente",
+  "cidade": "Vila Velha",
+  "latitude": -20.355163,          
+  "longitude": -40.340031,
+  "tags": ["Toners","Cartuchos de Impressora"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Professora Nice de Paula Agostini Sobrinho",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.357682,           
+  "longitude": -40.301296,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Darcy Ribeiro",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.431600,         
+  "longitude":-40.363217,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Guilherme Santos",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.350490,            
+  "longitude": -40.311621,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEI Professora Euphelia Moreira Vieira",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.376098,            
+  "longitude": -40.350215,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Antônio Debarcellos",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.359423,        
+  "longitude": -40.310162,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEFTI REV. ANTÔNIO DA SILVA COSMO",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude":  -20.359805,        
+  "longitude": -40.314679 ,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF CORONEL JOAQUIM DE FREITAS",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.333814,             
+  "longitude": -40.302959,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEFTI Senador João de Medeiros Calmon",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.375473,             
+  "longitude": -40.313849,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Marina Barcellos Silveira",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.382865,         
+  "longitude": -40.329193,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEFTI Macionilía Maurício Bueno",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude":  -20.331694,         
+  "longitude": -40.334940 ,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEI Vovó Cecília",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.338709,              
+  "longitude": -40.319964,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Antônio Bezerra De Farias",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.340353,              
+  "longitude": -40.339950,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEI Pedro Cavalieri",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.337481,          
+  "longitude": -40.335016,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Giovani Cavallieri",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude":  -20.343602, 
+  "longitude": -40.326120 ,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEI Julierme da Cruz Dias",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.344805,              
+  "longitude": -40.341270,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Rubem Braga",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.354038,               
+  "longitude": -40.302961,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEI Juvacy Frechiani",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude":  -20.335910,          
+  "longitude": -40.350999 ,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEI Tia Nina",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.368393,            
+  "longitude": -40.314907,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Dr. Tuffy Nader",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.421210,               
+  "longitude": -40.328301,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem Umef Governador Christiano Dias Lopes Filho",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.434920,          
+  "longitude": -40.331869,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Deolindo Perim",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude":  -20.440477,  
+  "longitude": -40.339528 ,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEI Professor Ana Maria Fontes Lyra",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.509830,              
+  "longitude": -40.374446,
+  "tags": ["Tampas garrafas PET"]
+},
+{
+  "nome": "Tampinhas do Bem UMEF Paulo Mares Guia",
+  "descricao": "SEG - Sex 08:00 - 20 : 00",
+  "cidade": "Vila Velha",
+  "latitude": -20.358239,                
+  "longitude": -40.354406,
+  "tags": ["Tampas garrafas PET"]
+},
