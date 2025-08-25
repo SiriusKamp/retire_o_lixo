@@ -23,8 +23,7 @@ public class PinController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Pin>> listarPins(@RequestParam(required = false) String cidade,
-                                                @RequestParam(required = false) String tag) {
+    public ResponseEntity<List<Pin>> listarPins(@RequestParam(required = false) String cidade, @RequestParam(required = false) String tag) {
         if (cidade != null) {
             return ResponseEntity.ok(pinService.buscarPorCidade(cidade));
         } else if (tag != null) {
@@ -35,7 +34,7 @@ public class PinController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Pin> buscarPorId(@PathVariable String id) {
+    public ResponseEntity<Pin> buscarPorId(@PathVariable String id) { 
         return pinService.buscarPorId(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
