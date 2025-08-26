@@ -19,7 +19,9 @@ public class PinService {
     public Pin salvarPin(Pin pin) {
         return pinRepository.save(pin);
     }
-
+public List<Pin> salvarTodos(List<Pin> pins) {
+        return pinRepository.saveAll(pins);
+    }
     public List<Pin> listarPins() {
         return pinRepository.findAll();
     }
