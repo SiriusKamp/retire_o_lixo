@@ -2,7 +2,7 @@ package com.api.retire.retire_o_lixo.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import java.util.List; // ← IMPORT ESSENCIAL
+import org.locationtech.jts.geom.Point;
 
 @Entity
 @Table(name = "pins")
@@ -23,12 +23,11 @@ public class Pin {
     @Column(nullable = false)
     private String cidade;
 
-    @Column(nullable = false)
-    private double latitude;
+    // Mapeia para geometry(Point, 4326)
+    @Column(columnDefinition = "geometry(Point,4326)")
+    private Point localizacao;
 
-    @Column(nullable = false)
-    private double longitude;
-
-    @ElementCollection
-    private List<String> tags;
+    // Mapeia para text[]
+    @Column(columnDefinition = "text[]")
+    private String[] tags;
 }

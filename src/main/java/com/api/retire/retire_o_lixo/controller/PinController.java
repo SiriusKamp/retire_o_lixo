@@ -1,5 +1,6 @@
 package com.api.retire.retire_o_lixo.controller;
 
+import com.api.retire.retire_o_lixo.model.PinRequest;
 import com.api.retire.retire_o_lixo.model.Pin;
 import com.api.retire.retire_o_lixo.service.PinService;
 import org.springframework.http.ResponseEntity;
@@ -18,8 +19,8 @@ public class PinController {
     }
 
     @PostMapping
-    public ResponseEntity<Pin> criarPin(@RequestBody Pin pin) {
-        return ResponseEntity.ok(pinService.salvarPin(pin));
+    public ResponseEntity<Pin> criarPin(@RequestBody List<PinRequest> request) {
+        return ResponseEntity.ok(pinService.salvarPin(request));
     }
 
     @PostMapping("/pins")
@@ -29,18 +30,16 @@ public ResponseEntity<List<Pin>> salvar(@RequestBody List<Pin> pins) {
 }
 
     @GetMapping
-    public ResponseEntity<List<Pin>> listarPins(@RequestParam(required = false) String cidade, @RequestParam(required = false) String tag) {
+    public ResponseEntity<List<Pin>> listarPins(@RequestParam(required = false) String cidade) {
         if (cidade != null) {
             return ResponseEntity.ok(pinService.buscarPorCidade(cidade));
-        } else if (tag != null) {
-            return ResponseEntity.ok(pinService.buscarPorTag(tag));
         } else {
             return ResponseEntity.ok(pinService.listarPins());
         }
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Pin> buscarPorId(@PathVariable String id) { 
+    public ResponseEntity<Pin> buscarPorId(@PathVariable String id) {
         return pinService.buscarPorId(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
