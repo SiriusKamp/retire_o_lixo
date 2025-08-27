@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/pin")
+@RequestMapping("/api/pins")
 public class PinController {
 
     private final PinService pinService;
@@ -19,15 +19,9 @@ public class PinController {
     }
 
     @PostMapping
-    public ResponseEntity<Pin> criarPin(@RequestBody List<PinRequest> request) {
+    public ResponseEntity<Pin> criarPin(@RequestBody PinRequest request) {
         return ResponseEntity.ok(pinService.salvarPin(request));
     }
-
-    @PostMapping("/pins")
-public ResponseEntity<List<Pin>> salvar(@RequestBody List<Pin> pins) {
-    List<Pin> salvos = pinService.salvarTodos(pins);
-    return ResponseEntity.ok(salvos);
-}
 
     @GetMapping
     public ResponseEntity<List<Pin>> listarPins(@RequestParam(required = false) String cidade) {

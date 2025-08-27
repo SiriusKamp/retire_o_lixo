@@ -21,30 +21,20 @@ public class PinService {
         this.pinRepository = pinRepository;
     }
 
-    public List<Pin> salvarPins(List<PinRequest> requests) {
-        List<Pin> pins = requests.stream().map(request -> {
-            Point point = geometryFactory.createPoint(new Coordinate(request.getLongitude(), request.getLatitude()));
-            point.setSRID(4326);
-    
-            Pin pin = new Pin();
-            pin.setNome(request.getNome());
-            pin.setDescricao(request.getDescricao());
-            pin.setCidade(request.getCidade());
-            pin.setLocalizacao(point);
-            pin.setTags(request.getTags().toArray(new String[0]));
-    
-            return pin;
-        }).toList();
-    
-        return pinRepository.saveAll(pins);
+    public Pin salvarPin(PinRequest request) {
+        Point point = geometryFactory.createPoint(new Coordinate(request.getLongitude(), request.getLatitude()));
+        point.setSRID(4326);
+
+        Pin pin = new Pin();
+        pin.setNome(request.getNome());
+        pin.setDescricao(request.getDescricao());
+        pin.setCidade(request.getCidade());
+        pin.setLocalizacao(point);
+        pin.setTags(request.getTags().toArray(new String[0]));
+
+        return pinRepository.save(pin);
     }
-<<<<<<< HEAD
-public List<Pin> salvarTodos(List<Pin> pins) {
-        return pinRepository.saveAll(pins);
-    }
-=======
-    
->>>>>>> ce803108bfc670ac76c76e266d30818db22d37f9
+
     public List<Pin> listarPins() {
         return pinRepository.findAll();
     }
