@@ -19,7 +19,7 @@ public class PinController {
     }
 
     @PostMapping
-    public ResponseEntity<Pin> criarPin(@RequestBody List<PinRequest> request) {
+    public ResponseEntity<Pin> criarPin(@RequestBody PinRequest request) {
         return ResponseEntity.ok(pinService.salvarPin(request));
     }
 
