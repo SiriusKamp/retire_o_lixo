@@ -228,7 +228,7 @@
   "cidade": "Vila Velha",
   "latitude": -20.359894,       
   "longitude": -40.298871,
-  "tags": ["Resíduos Eletrônicos","Pilhas","Baterias","Placas"]
+  "tags": ["Lâmpadas"]
 },
 {
   "nome": "PEV Pneus Lindenberg",
