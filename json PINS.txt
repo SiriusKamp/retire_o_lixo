@@ -1,3 +1,4 @@
+[
 {
   "nome": "Shopping Vitória",
   "descricao": "SEG - SAB 10:00 - 22:00, DOM 10:00-21:00",
@@ -28,7 +29,7 @@
   "cidade": "Vila Velha",
   "latitude": -20.342072, 
   "longitude": -40.296212,
-  "tags": ["Entulhos até 2m³,"Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
+  "tags": ["Entulhos até 2m³","Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
 },
 {
   "nome": "Ecoponto Araçás",
@@ -36,7 +37,7 @@
   "cidade": "Vila Velha",
   "latitude": -20.381226, 
   "longitude": -40.326798,
- "tags": ["Entulhos até 2m³,"Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
+ "tags": ["Entulhos até 2m³","Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
 },
 {
   "nome": "Ecoponto Hospital cocal",
@@ -44,7 +45,7 @@
   "cidade": "Vila Velha",
   "latitude":-20.359737, 
   "longitude": -40.304681 ,
-  "tags": ["Entulhos até 2m³,"Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
+  "tags": ["Entulhos até 2m³","Moveis,Sofas,etc","poda de árvore","resíduos recicláveis (exceto embalagens de alimentos)"]
 },
 {
   "nome": "PEV SELETIVA Praia da costa",
@@ -445,4 +446,5 @@
   "latitude": -20.358239,                
   "longitude": -40.354406,
   "tags": ["Tampas garrafas PET"]
-},
+}
+]
