@@ -1,5 +1,7 @@
 package com.api.retire.retire_o_lixo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +15,8 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.GetMapping;
+
 
 @RestController
 @RequestMapping("/api/bairros")
@@ -44,4 +48,10 @@ public class BairroController {
 
         return ResponseEntity.ok("Bairros inseridos com sucesso!");
     }
+
+    @GetMapping("")
+    public List<Object[]> GetBairros() {
+        return bairroRepository.buscarBairrosComGeoJson();
+    }
+    
 }
