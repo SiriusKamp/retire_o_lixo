@@ -1,0 +1,98 @@
+[]
+{
+ "nome": "PEV SELETIVA Bento Ferreira Ii",
+ "descricao": "Permanente Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.315054,  
+ "longitude": -40.304635, 
+ "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+ "nome": "PEV SELETIVA Bento Ferreira",
+ "descricao": "Permanente Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.312321,  
+ "longitude": -40.308776,
+ "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+ "nome": "PEV SELETIVA Consolação",
+ "descricao": "Permanente Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.309398,  
+ "longitude": -40.310964,
+ "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+ "nome": "RECICLA CAPIXABA",
+ "descricao": "SEG-SEX 7:30-17:30 Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.308819,  
+ "longitude": -40.312827 ,
+ "tags": ["Cerâmicos","Embalagem","Embalagens de agrotóxico vazia (após tríplice lavagem)","Embalagens de alumínio","Isopor","Plástico","Pneus","Sucata de metais ferrosos","Tampinhas plásticas","Lacres de latinhas"]
+},
+{
+ "nome": "Ascamare - Coleta Seletiva",
+ "descricao": "??? Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.309665,  
+ "longitude": -40.313287 ,
+ "tags": ["Plastico","Metal","Papel","Reciclaveis"]
+},
+{
+ "nome": "PEV ELETRÔNICOS Jucutuquara",
+ "descricao": "Permanente Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.310833,
+ "longitude":  -40.320081,
+ "tags": ["Resíduos Eletrônicos","Pilhas","Baterias","Placas"]
+},
+{
+ "nome": "CENTRAL RECICLA",
+ "descricao": "SEG-SAB 8:00-18:00 Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.319711,   
+ "longitude": -40.331457,
+ "tags": ["Moveis","utensílios","Reutilizaveis"]
+},
+{
+ "nome": "PEV SELETIVA Centro",
+ "descricao": "Permanente Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.320411, 
+ "longitude":  -40.338171,
+ "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+ "nome": "Estação Bota-fora em São Pedro",
+ "descricao": "Permanente Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.282585,  
+ "longitude":  -40.333049,
+ "tags": ["Entulhos","Moveis","Carcaças de Objetos"]
+},
+{
+ "nome": "PEV SELETIVA - Estação Bota Fora",
+ "descricao": "Permanente Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.278447, 
+ "longitude":  -40.327649,
+ "tags": ["Papel","Plástico","Papelão","Metal"]
+},
+{
+ "nome": "Amariv - Associação dos Catadores de Materiais Recicláveis da Ilha de Vitória",
+ "descricao": "SEG-SEX 07:00-18:00 Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.262746,  
+ "longitude":  -40.302294,
+ "tags": ["Papel","Plástico","Papelão","Metal","Reciclaveis"]
+},
+{
+ "nome": "PEV SELETIVA - Ecovix - Goiabeiras",
+ "descricao": "Diário 07:00-17:00 Fonte Google Maps",
+ "cidade": "Vitória",
+ "latitude": -20.262234, 
+ "longitude": -40.301046,
+ "tags": ["Papel","Plástico","Papelão","Metal"]
+}
+]
