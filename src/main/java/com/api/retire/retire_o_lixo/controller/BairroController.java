@@ -60,11 +60,12 @@ public class BairroController {
         ObjectMapper mapper = new ObjectMapper();
     
         for (Object[] linha : resultados) {
-            String cdBairro = (String) linha[0];
-            String nmBairro = (String) linha[1];
-            String municipio = (String) linha[2];
-            String uf = (String) linha[3];
-            String geojson = (String) linha[4];
+            Long id = (Long) linha[0];
+            String cdBairro = (String) linha[1];
+            String nmBairro = (String) linha[2];
+            String municipio = (String) linha[3];
+            String uf = (String) linha[4];
+            String geojson = (String) linha[5];
     
             try {
                 JsonNode root = mapper.readTree(geojson);
@@ -89,6 +90,7 @@ public class BairroController {
                 }
     
                 BairroGeoDTO dto = new BairroGeoDTO();
+                dto.setId(id);
                 dto.setCdBairro(cdBairro);
                 dto.setNmBairro(nmBairro);
                 dto.setMunicipio(municipio);

@@ -2,9 +2,9 @@ package com.api.retire.retire_o_lixo.repository;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import com.api.retire.retire_o_lixo.model.Horarios;
@@ -12,7 +12,7 @@ import com.api.retire.retire_o_lixo.model.Horarios;
 import jakarta.transaction.Transactional;
 
 @Repository
-public interface HorariosRepository extends CrudRepository<Object, Long> {
+public interface HorariosRepository extends JpaRepository<Horarios, Long> {
 
     @Transactional
     @Modifying
