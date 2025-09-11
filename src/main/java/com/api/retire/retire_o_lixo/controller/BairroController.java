@@ -54,55 +54,72 @@ public class BairroController {
     }
 
     @GetMapping("")
-    public List<BairroGeoDTO> getBairros() {
-        List<Object[]> resultados = bairroRepository.buscarBairrosComGeoJson();
-        List<BairroGeoDTO> bairros = new ArrayList<>();
-        ObjectMapper mapper = new ObjectMapper();
-    
-        for (Object[] linha : resultados) {
-            Long id = (Long) linha[0];
-            String cdBairro = (String) linha[1];
-            String nmBairro = (String) linha[2];
-            String municipio = (String) linha[3];
-            String uf = (String) linha[4];
-            String geojson = (String) linha[5];
-    
-            try {
-                JsonNode root = mapper.readTree(geojson);
-                JsonNode coordsNode = root.get("coordinates");
-    
-                // Se for Polygon, transforma em MultiPolygon
-                if ("Polygon".equals(root.get("type").asText())) {
-                    // Wrap para manter formato consistente
-                    coordsNode = mapper.readTree("[" + coordsNode.toString() + "]");
-                }
-    
-                List<List<List<Double>>> coordinates = new ArrayList<>();
-                for (JsonNode polygon : coordsNode) {
-                    List<List<Double>> poly = new ArrayList<>();
-                    for (JsonNode point : polygon.get(0)) {
-                        poly.add(Arrays.asList(
-                            point.get(0).asDouble(),
-                            point.get(1).asDouble()
-                        ));
-                    }
-                    coordinates.add(poly);
-                }
-    
-                BairroGeoDTO dto = new BairroGeoDTO();
-                dto.setId(id);
-                dto.setCdBairro(cdBairro);
-                dto.setNmBairro(nmBairro);
-                dto.setMunicipio(municipio);
-                dto.setUf(uf);
-                dto.setCoordinates(coordinates);
-    
-                bairros.add(dto);
-            } catch (Exception e) {
-                e.printStackTrace(); // ou log
+public List<BairroGeoDTO> getBairros() {
+    List<Object[]> resultados = bairroRepository.buscarBairrosComGeoJson();
+    List<BairroGeoDTO> bairros = new ArrayList<>();
+    ObjectMapper mapper = new ObjectMapper();
+
+    for (Object[] linha : resultados) {
+        Long id = (Long) linha[0];
+        String cdBairro = (String) linha[1];
+        String nmBairro = (String) linha[2];
+        String municipio = (String) linha[3];
+        String uf = (String) linha[4];
+        String geojson = (String) linha[5];
+
+        try {
+            JsonNode root = mapper.readTree(geojson);
+            JsonNode coordsNode = root.get("coordinates");
+
+            // Se for Polygon, transforma em MultiPolygon
+            if ("Polygon".equals(root.get("type").asText())) {
+                coordsNode = mapper.readTree("[" + coordsNode.toString() + "]");
             }
+
+            // Se for MultiPolygon, pega apenas o maior polígono
+            if ("MultiPolygon".equals(root.get("type").asText())) {
+                JsonNode biggest = null;
+                int maxSize = 0;
+
+                for (JsonNode polygon : coordsNode) {
+                    int size = polygon.get(0).size(); // número de vértices
+                    if (size > maxSize) {
+                        maxSize = size;
+                        biggest = polygon;
+                    }
+                }
+
+                // mantém só o maior polígono
+                coordsNode = mapper.readTree("[" + biggest.toString() + "]");
+            }
+
+            List<List<List<Double>>> coordinates = new ArrayList<>();
+            for (JsonNode polygon : coordsNode) {
+                List<List<Double>> poly = new ArrayList<>();
+                for (JsonNode point : polygon.get(0)) {
+                    poly.add(Arrays.asList(
+                        point.get(0).asDouble(),
+                        point.get(1).asDouble()
+                    ));
+                }
+                coordinates.add(poly);
+            }
+
+            BairroGeoDTO dto = new BairroGeoDTO();
+            dto.setId(id);
+            dto.setCdBairro(cdBairro);
+            dto.setNmBairro(nmBairro);
+            dto.setMunicipio(municipio);
+            dto.setUf(uf);
+            dto.setCoordinates(coordinates);
+
+            bairros.add(dto);
+        } catch (Exception e) {
+            e.printStackTrace(); // log em caso de erro
         }
-    
-        return bairros;
     }
+
+    return bairros;
+}
+
 }    
