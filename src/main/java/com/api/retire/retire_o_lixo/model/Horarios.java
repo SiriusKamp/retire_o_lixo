@@ -15,15 +15,15 @@ public class Horarios {
     private Long id;
 
     @Column(name = "bairro_id", nullable = false)
-    private Long bairroId;
+    private Long bairro_id;
 
     @Column(name = "nome_bairro", nullable = false)
-    private String nomeBairro;
+    private String nome_bairro;
 
     // Arrays de texto no Postgres podem ser mapeados como List<String>
     @Column(name = "Dia_horario", columnDefinition = "varchar[]", nullable = false)
-    private List<String> diaHorario;
+    private List<String> Dia_horario;
 
     @Column(name = "Dias", columnDefinition = "varchar[]", nullable = false)
-    private List<String> dias;
+    private List<String> Dias;
 }

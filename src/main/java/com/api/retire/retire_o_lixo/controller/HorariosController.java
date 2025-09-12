@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
-@RequestMapping("/horarios")
+@RequestMapping("/api/horarios")
 public class HorariosController {
 
     @Autowired

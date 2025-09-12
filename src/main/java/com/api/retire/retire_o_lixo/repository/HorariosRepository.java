@@ -17,11 +17,14 @@ public interface HorariosRepository extends JpaRepository<Horarios, Long> {
     @Transactional
     @Modifying
     @Query(
-        value = "INSERT INTO horarios (bairro_id, nome_bairro, dia_horario, dias) " +
-                "VALUES ((SELECT id FROM bairros WHERE nm_bairro = :nome_bairro), :nome_bairro, :dia_horario, :dias)",
+        value = "INSERT INTO horarios (bairro_id, nome_bairro, \"Dia_horario\", \"Dias\") " +
+                "SELECT b.id, :nome_bairro, :dia_horario, :dias " +
+                "FROM bairros b " +
+                "WHERE b.nm_bairro ILIKE :nome_bairro and b.municipio ILIKE 'Vila Velha'",
         nativeQuery = true
     )
     void salvarHorario(String nome_bairro, String[] dia_horario, String[] dias);
+    
 
     @Query 
     (
