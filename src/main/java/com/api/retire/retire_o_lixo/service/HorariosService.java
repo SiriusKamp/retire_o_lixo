@@ -36,4 +36,8 @@ public class HorariosService {
  public List<Horarios> getHorarios(){
   return horariosRepository.getHorarios();
  }
+
+ public Horarios getHorariosbybairro(Long id){
+  return horariosRepository.getHorariosbyBairro(id);
+ }
 }

@@ -64,4 +64,10 @@ private PasswordEncoder passwordEncoder;
         dto.setBairro(usuario.getBairro());
         return dto;
     }
+
+    public UsuarioResponseDTO buscarPorId(Long id) {
+        Usuario usuario = usuarioRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Usuário não encontrado!"));
+        return toResponseDTO(usuario);
+    }
 }

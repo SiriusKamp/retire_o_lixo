@@ -13,16 +13,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.api.retire.retire_o_lixo.DTO.BairroGeoDTO;
 // Update the import below to the correct package where GeoJsonDTO exists
 import com.api.retire.retire_o_lixo.DTO.GeoJsonDTO;
+import com.api.retire.retire_o_lixo.model.Bairro;
 import com.api.retire.retire_o_lixo.repository.BairroRepository;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 
 @RestController
+@CrossOrigin(origins = "*") // ou coloque seu domínio específico
 @RequestMapping("/api/bairros")
 public class BairroController {
 
@@ -53,6 +57,7 @@ public class BairroController {
         return ResponseEntity.ok("Bairros inseridos com sucesso!");
     }
 
+@CrossOrigin(origins = "*") // ou coloque seu domínio específico
     @GetMapping("")
 public List<BairroGeoDTO> getBairros() {
     List<Object[]> resultados = bairroRepository.buscarBairrosComGeoJson();
@@ -121,5 +126,9 @@ public List<BairroGeoDTO> getBairros() {
 
     return bairros;
 }
-
+    @GetMapping("/{id}")
+    public Bairro getBairroById(@PathVariable Long id) {
+        return bairroRepository.findById(id).get();
+               
 }    
+}

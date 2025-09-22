@@ -2,6 +2,7 @@ package com.api.retire.retire_o_lixo.repository;
 
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -33,8 +34,12 @@ public interface BairroRepository extends JpaRepository<Bairro, Long> {
                       
                       @Query(
                         value = "SELECT id,cd_bairro, nm_bairro, municipio, uf, ST_AsGeoJSON(geom) AS geojson " +
-                                "FROM bairros",
+                                "FROM bairros order by nm_bairro",
                         nativeQuery = true
                     )   
                     List<Object[]> buscarBairrosComGeoJson();
+
+    @Query(
+        value = "SELECT id,cd_bairro, nm_bairro, municipio, uf,null as geom" + " from bairros where id = :id",nativeQuery =  true)
+                    public Optional<Bairro> findById(@Param("id") Long id);
 }

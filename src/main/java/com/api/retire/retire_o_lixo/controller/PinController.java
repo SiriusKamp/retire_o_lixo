@@ -24,7 +24,7 @@ public class PinController {
         return ResponseEntity.ok(salvos);
     }
     
-
+    @CrossOrigin(origins = "*") // ou coloque seu domínio específico
     @GetMapping
     public ResponseEntity<List<Pin>> listarPins(@RequestParam(required = false) String cidade) {
         if (cidade != null) {
@@ -33,7 +33,7 @@ public class PinController {
             return ResponseEntity.ok(pinService.listarPins());
         }
     }
-
+    @CrossOrigin(origins = "*") // ou coloque seu domínio específico
     @GetMapping("/{id}")
     public ResponseEntity<Pin> buscarPorId(@PathVariable String id) {
         return pinService.buscarPorId(id)

@@ -9,8 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
@@ -25,10 +23,14 @@ public class HorariosController {
         horariosService.salvarHorarios(horarios);
         return ResponseEntity.ok("Horários salvos com sucesso!");
     }
-
+    @CrossOrigin(origins = "*") // ou coloque seu domínio específico
     @GetMapping
         public List<Horarios> getHorarios() {
         return horariosService.getHorarios();
     }
-    
+    @CrossOrigin(origins = "*") // ou coloque seu domínio específico
+    @GetMapping("/bairro")
+    public Horarios getHorariosbybairro(@RequestParam Long id) {
+    return horariosService.getHorariosbybairro(id);
+}
 }

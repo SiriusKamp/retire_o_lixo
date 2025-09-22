@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/api/usuarios")
 public class UsuarioController {
 
     @Autowired
@@ -32,5 +32,10 @@ public class UsuarioController {
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         usuarioService.deletar(id);
+    }
+
+    @GetMapping("/{id}")
+    public UsuarioResponseDTO getById(@PathVariable Long id) {
+        return usuarioService.buscarPorId(id);
     }
 }
